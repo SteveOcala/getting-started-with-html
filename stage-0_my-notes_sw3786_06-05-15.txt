@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Stage 0: steve|sw3786</title>
+
+<!-- well, I guess I took a lot of notes. <bright_smile!>
+     I have a new computer and haven't deciced between Office and WPS
+     and so haven't downloaded any version of either, so I took
+     notes in Notepad and worked them up in scratchpad.io
+     My code examples were weirding out in the browser view
+     so I went to w3schools.com to find a tag that would treat them
+     as text only. <code> seemed to provide some odd results so
+     I tried <textarea> and it seems to be doing the job. Steve
+
+-->
+
+</head>
+
+<body>
+
+<p>Video Instructor: Steve Huffman, cofounder of Reddit</p>
+
+<h1>Unit 1 - The Basics of the Web</h1>
+
+<ul>
+  <li>The Web</li>
+  <li>HTML</li>
+  <li>URLs</li>
+  <li>HTTP - protocol that unites the web, that it runs on Web Applications</li>
+</ul>
+
+<hr>
+
+<h2>The Web</h2>
+
+  <ul>
+    <li>www - a collection of html documents</li>
+    <li>HTML - HyperText Markup Language</li>
+    <li>Hyper Links aka links</li>
+</ul>
+
+<p><strong>More</strong></p>
+
+  <ul>
+    <li>Invented in the early 90's</li>
+    <li>Has 30 billion pages</li>
+    <li>You / your computer / your browser --> Internet --> http --> Servers</li>
+    <li>browser makes requests in http protocal</li>
+    <li>servers respond with files the browser displays</li>
+    <li>Browser examples: Internet Explorer, Chrome, Firefox, Safari</li>
+    <li>servers - computers optimized for handling files</li>
+  </ul>
+
+<hr>
+
+<h2>HTML</h2>
+
+<ul>
+<li>HTML - HyperText Markup Language</li>
+<li>HTML documents - the heart of the web. Made up of:
+  <ul>
+    <li>Text content: what you see</li>
+    <li>Markup: what it looks like</li>
+     <li>Reference to other documents, e.g., images/videos</li>
+  </ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>HTML Markup - tags</h2>
+
+<p>The whole thing is an element:</p>
+
+<textarea>
+<Name>Contents</Name>
+<opening tag>Conents</closing tag>
+<b>contents</b>
+<em>emphasis, aka italics</em>
+</textarea>
+
+<p>HTML tags can be nested:</p>
+
+<textarea>
+I am going to <em>learn</em> to <b>love</b> HTML.
+</textarea>
+
+
+<p>Computers are stupid. (i.e., can't identify the need for a slash if forgotten to be added to an end tag)</p>
+
+<hr>
+
+<h2>HTML Attributes</h2>
+
+<textarea><tag attr="value">contents</tag></textarea>
+
+
+<p>Tags can have multiple attributes.</p>
+
+<textarea><a href="www.reddit.com">derp</a></textarea>
+
+<ul>
+  <li>attr = href</li>
+  <li>value = www.reddit.com</li>
+</ul>
+
+<hr>
+
+<h2>Images</h2>
+
+<textarea><img></textarea> 
+
+<p>Images are void tags, as they have no content, and so no end tag.</p>
+
+<p>If you were going to serve an image, this is how you'd do it:</p>
+
+<textarea><img src="url" alt="text"></textarea>   
+
+<p>alt - for broken requests and blind people</p>
+
+<hr>
+
+<h2>Break</h2>
+
+<textarea><br></textarea>
+
+<p>A void tag</p>
+
+<textarea>
+<p>This text appears as one line</p>
+
+<p>this text appears
+as one line</p>
+</textarea>
+
+<p>This text appears as one line</p>
+
+<p>this text appears
+as one line</p>  
+
+<textarea>this will break<br> at the break</textarea>
+
+<p>this will break<br> at the break:</p>
+
+<textarea><p>paragraph tag</p></textarea>
+
+<p>Paragraph tags adds a space before and after</p>
+
+<hr>
+
+<h2>inline vs. block elements</h2>
+
+<ul>
+  <li>br tags are inline: just end the line</li>
+  <li>p tags - block: puts an invisible box around the text can have height/width</li>
+</ul>
+
+<textarea>
+inline: <b>, <strong>, <em>, <img>, <span>, & <br>!*
+block: <p>, <div>, <form>
+</textarea>
+
+<p>*http://www.impressivewebs.com/difference-block-inline-css/ </p>
+
+<p>Excerpt from that article:</p>
+
+<p><em>The easiest way to picture an <strong>inline element</strong> is to think 
+of it as <strong>a box that acts like text</strong>. What happens, for example, 
+to text that is not separated by other elements? It flows one letter after the other. 
+If you put an inline element next to text, it will flow next to that text 
+just like another piece of text.</em></p>
+
+<p><em>The <strong>block</strong> examples are structural elements, while 
+the <strong>inline</strong> elements are text-based.</em></p>
+
+<hr>
+
+<h2>Container elements</h2>
+
+<p>Container elements don't do anything other than contain text, but the text can be tweaked 
+via attributes set for the elements</p>
+
+<textarea>
+<span>text</span> <-- inline
+<div>text</div> <-- block
+<span class="foo">text</span>
+<div class="bar">text</div>
+</textarea>
+
+<hr>
+
+<h2>HTML documents</h2>
+
+<textarea>
+<!DOCTYPE HTML> - what kind of HTML it is
+<html>
+<head>
+  <title>The Title</title>
+</head>
+
+<body>
+
+<p>Content here!</p>
+
+</body>
+</html>
+</textarea>
+
+<hr>
+
+<h2>What to take away from this lesson.</h2>
+
+<p>The five most important things to take from this lesson are the following:</p>
+
+<ol>
+  <li><strong>What a Web Page is</strong>
+    <ul>
+      <li>A web page is a text document written in a language called HTML. 
+          Web browsers read these documents, and then interpret and display them.</li>
+    </ul></li>
+  <li><strong>How Coding Works</strong>
+     <ul>
+       <li>Coding happens when programmers write text in a language that a computer 
+            can understand. The computer can then follow the instructions the 
+            programmer wrote. For example, the computer might do this by making 
+            text like this:<br><br>
+               
+        <textarea>I'm <b>learning</b> to code!</textarea>
+         
+         <p>look like this:</p>
+
+        <p>I'm <strong>learning</strong> to code!</>
+      </ul>
+  <li><strong>Computers are Stupid</strong>
+     <ul>
+       <li>Programmers need to write exactly the way a computer understands 
+           (also known as writing with correct "syntax").</li>
+       <li>For example, if you forget to close a "b" tag, the computer won't be able to 
+       figure out what you had intended to make bold. This "stupidity" can be very 
+       rustrating, but it also gives programmers incredible power: if you know how 
+       to talk to a computer than you can tell it to do anything you want.</li>
+     </ul></li>
+  <li><strong>Programmers Can't Remember Everything</strong>
+    <ul>
+      <li>There are too many details to keep everything in your head. And that's okay. 
+      If you forget how to make text italic in HTML, you can always just look it up.</li>
+    </ul></li>
+  <li><strong>Basic HTML Vocabulary</strong>
+    <ul>
+      <li>You will be using HTML in the next few lessons, so it will be helpful if 
+      you're comfortable with the jargon:</li>
+        <ul>
+          <li><strong>Tag</strong> - An HTML tag is always contained within angled brackets. Most tags have an opening tag 
+              ("p" for example) and a closing tag, ("/p"). 
+              Some tags (called "void" tags) do not require a closing tag (like the "br" tag).</li>
+          <li><strong>Element</strong> - An HTML element refers to everything within a set of opening and closing tags.</li>
+          <li><strong>Attribute</strong> - This is a property of an HTML element. For example, to set the href attribute
+              of an anchor tag to the Udacity URL, you would write<br>
+              <textarea><a href="http://www.udacity.com"></textarea></li>
+      </ul>
+    </ul>
+  </li>
+</ol>    
+
+</body>
+
+</html>

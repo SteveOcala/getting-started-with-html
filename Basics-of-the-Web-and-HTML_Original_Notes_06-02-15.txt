@@ -1,0 +1,220 @@
+Video Instructor: Steve Huffman, cofounder of Reddit
+
+Unit 1 - The Basics of the Web
+
+The Web
+HTML
+URLs
+HTTP - protocol that unites the web, that it runs on
+Web Applications
+
+-------
+
+www - World Wide Web
+ - a collection of html documents
+HTML - HyperText Markup Language
+Hyper Links aka links
+
+Invented in the early 90's
+
+Has 30 billion pages
+
+You / your computer / your browser --> Internet --> http --> Servers
+
+browser makes requests in http protocal
+servers respond with files the browser displays
+
+Browser examples: Internet Explorer, Chrome, Firefox, Safari
+
+servers - computers optimized for handling files
+
+-------
+
+HTML - HyperText Markup Language
+
+HTML documents - the heart of the web
+
+made up of:
+ - text content: what you see
+ - markup: what it looks like
+ - reference to other documents, e.g., images/videos
+
+-------
+HTML Markup - tags
+
+The whole thing is an element:
+
+<Name>Contents</Name>
+opening tag    closing tag
+
+<b>contents</b>
+<em>emphasis, aka italics</em>
+
+HTML tags can be nested: I am going to <em>learn</em> to <b>love</b> HTML.
+
+
+Computers are stupid. (i.e., can't identify the need for a slash if forgotten to be added to an end tag)
+
+-------
+HTML Attributes
+
+<tag attr="value">contents</tag>
+
+tags can have multiple attributes
+
+<a href="www.reddit.com">derp</a>
+   attr  value
+
+
+-------
+Images
+
+<img> - images are void tags, as they have no content, and so no end tag.
+
+if you were going to serve an image, this is how you'd do it:
+
+<img src="url" alt="text">   <-- alt for broken requests and blind people
+
+
+-------
+Break
+<br> a void tag
+
+this text appears as one line
+
+this text appears
+as one line
+
+this will break <br> at the break
+
+<p>paragraph</p> - adds a space before and after
+
+-------
+inline vs. block elements
+
+<br> - inline: just ends the line
+<p> - block: puts an invisible box around the text can have height/width
+
+
+
+inline: <b>, <strong>, <em>, <img>, <span>, & <br>!*
+block: <p>, <div>, <form>
+
+*http://www.impressivewebs.com/difference-block-inline-css/
+from that article"
+
+The easiest way to picture an inline element is to think of it as a box that acts like text. What happens, for example, to text that’s not separated by other elements? It flows one letter after the other. If you put an inline element next to text, it will flow next to that text just like another piece of text. The block examples are structural elements, while the inline elements are text-based. 
+-------
+Container elements 
+
+- don't do anything other than contain text, but the text can be tweaked via attributes set for the elements
+
+<span>text</span> <-- inline
+<div>text</div> <-- block
+
+<span class="foo">text</span>
+<div class="bar">text</div>
+
+-------
+HTML documents
+
+<!DOCTYPE HTML> - what kind of HTML it is
+<html>
+<head>
+  <title>The Title</title>
+</head>
+
+<body>
+
+<p>Content here!</p>
+
+</body>
+</html>
+
+
+-------
+
+What to take away from this lesson.
+
+The five most important things to take from this lesson are the following:
+
+1 - What a Web Page is
+
+A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.
+
+2 - How Coding Works
+
+Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer wrote. For example, the computer might do this by making text like this:
+
+I'm <b>learning</b> to code!
+
+look like this:
+
+I'm learning to code!
+
+3 - Computers are Stupid
+
+Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax").
+
+For example, if you forget to close a <b> tag, the computer won't be able to figure out what you had intended to make bold. This "stupidity" can be very frustrating, but it also gives programmers incredible power: if you know how to talk to a computer than you can tell it to do anything you want.
+
+4 - Programmers Can't Remember Everything
+
+There are too many details to keep everything in your head. And that's okay. If you forget how to make text italic in HTML, you can always just look it up.
+
+5 - Basic HTML Vocabulary
+
+You will be using HTML in the next few lessons, so it will be helpful if you're comfortable with the jargon.
+
+    Tag: An HTML tag is always contained within angled brackets. Most tags have an opening tag (<p> for example) and a closing tag, (</p>). Some tags (called "void" tags) do not require a closing tag (like the <br> tag).
+
+    Element: An HTML element refers to everything within a set of opening and closing tags.
+
+    Attribute: This is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write <a href="www.udacity.com">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
